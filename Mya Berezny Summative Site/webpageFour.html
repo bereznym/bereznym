@@ -1,0 +1,147 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <script src="myFunction.js"></script>
+    <title>Quiz</title>
+  </head>
+
+  <body>
+
+    <!--creates container for text and images-->
+    <div class="container">
+
+      <!--creates header-->
+      <header></header>
+
+      <!--creates nav bar-->
+      <nav>
+        <ul>
+          <li><a href="homepage.html">Meet Azara</a></li>
+          <li><a href="webpageOne.html">Hobbies and Activities</a></li>
+          <li><a href="webpageTwo.html">Azara's Best Moments</a></li>
+          <li><a href="webpageThree.html">Why I love Azara</a></li>
+          <li><a href="webpageFour.html">Quiz</a></li>
+        </ul>
+      </nav>
+
+      <main>
+
+        <!--creates title-->
+        <div class="titleFloat">
+          <h1>Quiz</h1>
+        </div>
+
+        <!--creates text-->
+        <div class="centerText">
+          <h4>How much do you know about Azara?</h4>
+        </div>
+
+        <!--creates quiz questions-->
+        <div class="quizFloat">
+          <h5>What did Azara win an award in?</h5>
+          <!--creates radio buttons-->
+          <input type="radio" id="Art" value="Correct">Art<br>
+          <input type="radio" id="Dance" value="Incorrect">Dance<br>
+          <input type="radio" id="Music" value="Incorrect">Music<br>
+          <input type="radio" id="Photography" value="Incorrect">Photography<br><br>
+
+          <!--creates sumbit button and checks the function in js file-->
+          <button class="button" type="button" id="button1" onclick=" checkButton()"> Submit </button>
+
+          <!--holds whether the answer is correct or not-->
+          <h3 id="Correct"> </h3>
+          <h4 id="Incorrect"> </h4>
+        </div>
+
+        <!--creates quiz questions-->
+        <div class="quizFloat">
+          <h5>What is Azara's favourite colour?</h5>
+
+          <!--creates radio buttons-->
+          <input type="radio" id="Orange" value="Incorrect2">Orange<br>
+          <input type="radio" id="Blue" value="Incorrect2">Blue<br>
+          <input type="radio" id="Purple" value="Correct2">Purple<br>
+          <input type="radio" id="Green" value="Incorrect2">Green<br><br>
+
+          <!--creates sumbit button and checks the function in js file-->
+          <button class="button" type="button" id="button2" onclick=" checkButton2()"> Submit </button>
+
+          <!--holds whether the answer is correct or not-->
+          <h3 id="Correct2"> </h3>
+          <h4 id="Incorrect2"> </h4>
+        </div>
+
+        <!--creates quiz questions-->
+        <div class="quizFloat">
+          <h5>What is Azara's favourite season?</h5>
+
+          <!--creates radio buttons-->
+          <input type="radio" id="Winter" value="Incorrect3">Winter<br>
+          <input type="radio" id="Fall" value="Incorrect3">Fall<br>
+          <input type="radio" id="Spring" value="Incorrect3">Spring<br>
+          <input type="radio" id="Summer" value="Correct3">Summer<br><br>
+
+          <!--creates sumbit button and checks the function in js file-->
+          <button class="button" type="button" id="button3" onclick=" checkButton3()"> Submit </button>
+
+          <!--holds whether the answer is correct or not-->
+          <h3 id="Correct3"> </h3>
+          <h4 id="Incorrect3"> </h4>
+        </div>
+
+        <!--creates quiz questions-->
+        <div class="quizFloat">
+          <h5>What instrument did Azara play first?</h5>
+
+          <!--creates radio buttons-->
+          <input type="radio" id="Guitar" value="Incorrect4">Guitar<br>
+          <input type="radio" id="Piano" value="Correct4">Piano<br>
+          <input type="radio" id="Trumpet" value="Incorrect4">Trumpet<br>
+          <input type="radio" id="Flute" value="Incorrect4">Flute<br><br>
+
+          <!--creates sumbit button and checks the function in js file-->
+          <button class="button" type="button" id="button4" onclick=" checkButton4()"> Submit </button>
+
+          <!--holds whether the answer is correct or not-->
+          <h3 id="Correct4"> </h3>
+          <h4 id="Incorrect4"> </h4>
+        </div>
+
+        <div class="clear">
+        </div>
+
+        <hr>
+
+        <!--creates button to check score-->
+        <div class="centerText">
+          <button class="button" type="button" onclick=" checkScore()"> Check Score </button>
+
+          <!--print score from score variable in js-->
+          <h3 id="Score"> </h3>
+        </div>
+
+        <div class="clear">
+        </div>
+
+        <hr>
+
+      </main>
+
+      <!--creates footer-->
+      <footer>
+        <div class="footerText">
+          <p>Made by Apple2 company</p>
+        </div>
+      </footer>
+
+    </div>
+  </body>
+</html>
